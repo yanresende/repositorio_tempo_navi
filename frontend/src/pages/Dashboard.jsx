@@ -20,7 +20,7 @@ export default function Dashboard() {
         />
         <StatsCard
           title="Consultas Hoje"
-          value="12"
+          value="3"
           icon={<CalendarCheck className="text-green-600" />}
           color="bg-green-600"
         />
