@@ -18,7 +18,7 @@ export default function Login() {
             <Stethoscope size={32} />
           </div>
           <h2 className="text-3xl font-extrabold text-gray-900 italic">
-            NaviData
+            Nave
           </h2>
           <p className="mt-2 text-sm text-gray-500">
             Acesse sua conta para gerenciar a clínica
@@ -34,7 +34,7 @@ export default function Login() {
               type="email"
               required
               className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition"
-              placeholder="exemplo@navidata.com"
+              placeholder="exemplo@navedata.com"
             />
           </div>
 
@@ -75,7 +75,7 @@ export default function Login() {
         </form>
 
         <p className="text-center text-xs text-gray-400 mt-8">
-          &copy; 2026 Navi Health System. Todos os direitos reservados.
+          &copy; 2026 Nave Health System. Todos os direitos reservados.
         </p>
       </div>
     </div>

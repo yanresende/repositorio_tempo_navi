@@ -85,7 +85,7 @@ function PerfilSection() {
         </div>
         <div className="space-y-1">
           <label className="text-sm font-medium text-gray-700">E-mail</label>
-          <input type="email" className="w-full px-4 py-2 rounded-lg border border-gray-200 outline-none focus:ring-2 focus:ring-blue-500" defaultValue="yan@navidata.com" />
+          <input type="email" className="w-full px-4 py-2 rounded-lg border border-gray-200 outline-none focus:ring-2 focus:ring-blue-500" defaultValue="yan@navedata.com" />
         </div>
         <div className="space-y-1">
           <label className="text-sm font-medium text-gray-700">Especialidade Principal</label>
