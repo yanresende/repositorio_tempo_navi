@@ -14,7 +14,7 @@ export default function Login() {
     <div className="min-h-screen flex items-center justify-center bg-gray-50 p-4">
       <div className="max-w-md w-full bg-white rounded-3xl shadow-xl p-10 space-y-8 border border-gray-100">
         <div className="text-center">
-          <div className="inline-flex p-4 bg-blue-600 rounded-2xl text-white mb-4">
+          <div className="inline-flex p-4 bg-[#f49434] rounded-2xl text-white mb-4">
             <Stethoscope size={32} />
           </div>
           <h2 className="text-3xl font-extrabold text-gray-900 italic">
@@ -33,7 +33,7 @@ export default function Login() {
             <input
               type="email"
               required
-              className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition"
+              className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-[#f49434] focus:border-transparent outline-none transition"
               placeholder="exemplo@navedata.com"
             />
           </div>
@@ -45,7 +45,7 @@ export default function Login() {
             <input
               type="password"
               required
-              className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition"
+              className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-[#f49434] focus:border-transparent outline-none transition"
               placeholder="••••••••"
             />
           </div>
@@ -60,7 +60,7 @@ export default function Login() {
             </label>
             <a
               href="#"
-              className="font-medium text-blue-600 hover:text-blue-500"
+              className="font-medium text-[#f49434] hover:text-[#c35029]"
             >
               Esqueceu a senha?
             </a>
@@ -68,7 +68,7 @@ export default function Login() {
 
           <button
             type="submit"
-            className="w-full bg-blue-600 text-white py-3 rounded-xl font-bold hover:bg-blue-700 transform active:scale-95 transition-all shadow-lg shadow-blue-200"
+            className="w-full bg-[#f49434] text-white py-3 rounded-xl font-bold hover:bg-[#c35029] transform active:scale-95 transition-all shadow-lg shadow-blue-200"
           >
             Entrar no Sistema
           </button>
