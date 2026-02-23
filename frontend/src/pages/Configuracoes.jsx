@@ -31,7 +31,7 @@ export default function Configuracoes() {
           
           <div className="bg-gray-50 px-8 py-4 flex justify-end gap-3 border-t border-gray-100">
             <button className="px-4 py-2 text-sm font-medium text-gray-600 hover:bg-gray-200 rounded-xl transition">Descartar</button>
-            <button className="flex items-center gap-2 bg-blue-600 text-white px-6 py-2 rounded-xl text-sm font-bold hover:bg-blue-700 transition shadow-lg shadow-blue-100">
+            <button className="flex items-center gap-2 bg-[#f49434] text-white px-6 py-2 rounded-xl text-sm font-bold hover:bg-[#c35029] transition shadow-lg shadow-blue-100">
               <Save size={18} /> Salvar Alterações
             </button>
           </div>
@@ -47,7 +47,7 @@ function SettingsTab({ icon, label, active, onClick }) {
     <button 
       onClick={onClick}
       className={`w-full flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium transition ${
-        active ? 'bg-blue-600 text-white shadow-md shadow-blue-100' : 'text-gray-500 hover:bg-white hover:text-gray-700'
+        active ? 'bg-[#f49434] text-white shadow-md shadow-blue-100' : 'text-gray-500 hover:bg-white hover:text-gray-700'
       }`}
     >
       {icon} {label}

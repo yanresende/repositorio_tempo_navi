@@ -42,7 +42,7 @@ export default function Dashboard() {
       <div className="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
         <div className="p-6 border-b border-gray-50 flex justify-between items-center">
           <h3 className="font-bold text-gray-800">Próximos Atendimentos</h3>
-          <button className="text-sm text-blue-600 font-medium hover:underline">
+          <button className="text-sm text-[#f49434] font-medium hover:underline">
             Ver agenda completa
           </button>
         </div>

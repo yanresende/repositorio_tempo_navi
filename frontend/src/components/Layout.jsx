@@ -13,10 +13,10 @@ export default function Layout() {
       {/* SIDEBAR */}
       <aside className="w-64 bg-white border-r border-gray-200 flex flex-col">
         <div className="p-6">
-          <h1 className="text-2xl font-bold text-blue-600 tracking-tight">
+          <h1 className="text-2xl font-bold text-[#9cbc84] tracking-tight">
             Nave
           </h1>
-          <p className="text-xs text-gray-400">Sistema De Apoio</p>
+          <p className="text-xs text-[#f49434]">Sistema De Apoio</p>
         </div>
 
         <nav className="flex-1 px-4 space-y-2">
@@ -63,7 +63,7 @@ function SidebarItem({ icon, label, to }) {
   return (
     <Link
       to={to}
-      className="flex items-center gap-3 text-gray-600 hover:bg-blue-50 hover:text-blue-600 p-3 rounded-xl transition-all group"
+      className="flex items-center gap-3 text-gray-600 hover:bg-[#fcecdc] hover:text-[#f49434] p-3 rounded-xl transition-all group"
     >
       <span className="group-hover:scale-110 transition-transform">{icon}</span>
       <span className="font-medium">{label}</span>

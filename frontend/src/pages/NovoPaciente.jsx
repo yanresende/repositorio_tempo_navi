@@ -40,10 +40,16 @@ export default function NovoPaciente() {
     <div className="max-w-4xl mx-auto space-y-6">
       {/* CABEÇALHO */}
       <div className="flex items-center justify-between">
-        <button onClick={() => navigate('/pacientes')} className="flex items-center gap-2 text-gray-500 hover:text-gray-700 transition">
+        <button
+          onClick={() => navigate("/pacientes")}
+          className="flex items-center gap-2 text-gray-500 hover:text-gray-700 transition"
+        >
           <ArrowLeft size={20} /> Voltar
         </button>
-        <button onClick={handleSubmit} className="flex items-center gap-2 bg-blue-600 text-white px-6 py-2 rounded-xl font-bold hover:bg-blue-700 transition shadow-lg shadow-blue-100">
+        <button
+          onClick={handleSubmit}
+          className="flex items-center gap-2 bg-[#f49434] text-white px-6 py-2 rounded-xl font-bold hover:bg-[#c35029] transition shadow-lg shadow-blue-100"
+        >
           <Save size={20} /> Salvar Paciente
         </button>
       </div>
@@ -51,37 +57,90 @@ export default function NovoPaciente() {
       <form className="space-y-6">
         {/* SECÇÃO: DADOS PESSOAIS */}
         <div className="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm space-y-4">
-          <div className="flex items-center gap-2 text-blue-600 font-bold mb-4">
+          <div className="flex items-center gap-2 text-[#f49434] font-bold mb-4">
             <User size={20} /> <span>Dados Pessoais</span>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <Input label="Nome Completo" placeholder="Ex: Maria Oliveira" value={formData.nome} onChange={e => setFormData({...formData, nome: e.target.value})} />
-            <Input label="CPF" placeholder="000.000.000-00" value={formData.cpf} onChange={e => setFormData({...formData, cpf: e.target.value})} />
-            <Input label="E-mail" type="email" placeholder="maria@email.com" value={formData.email} onChange={e => setFormData({...formData, email: e.target.value})} />
-            <Input label="Telefone/WhatsApp" placeholder="(11) 99999-9999" value={formData.telefone} onChange={e => setFormData({...formData, telefone: e.target.value})} />
+            <Input
+              label="Nome Completo"
+              placeholder="Ex: Maria Oliveira"
+              value={formData.nome}
+              onChange={(e) =>
+                setFormData({ ...formData, nome: e.target.value })
+              }
+            />
+            <Input
+              label="CPF"
+              placeholder="000.000.000-00"
+              value={formData.cpf}
+              onChange={(e) =>
+                setFormData({ ...formData, cpf: e.target.value })
+              }
+            />
+            <Input
+              label="E-mail"
+              type="email"
+              placeholder="maria@email.com"
+              value={formData.email}
+              onChange={(e) =>
+                setFormData({ ...formData, email: e.target.value })
+              }
+            />
+            <Input
+              label="Telefone/WhatsApp"
+              placeholder="(11) 99999-9999"
+              value={formData.telefone}
+              onChange={(e) =>
+                setFormData({ ...formData, telefone: e.target.value })
+              }
+            />
           </div>
         </div>
 
         {/* SECÇÃO: ENDEREÇO */}
         <div className="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm space-y-4">
-          <div className="flex items-center gap-2 text-green-600 font-bold mb-4">
+          <div className="flex items-center gap-2 text-blue-600 font-bold mb-4">
             <MapPin size={20} /> <span>Endereço</span>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div className="space-y-1">
-              <label className="text-sm font-medium text-gray-700">CEP (Busca automática)</label>
-              <input 
+              <label className="text-sm font-medium text-gray-700">
+                CEP (Busca automática)
+              </label>
+              <input
                 className="w-full px-4 py-2 rounded-lg border border-gray-200 outline-none focus:ring-2 focus:ring-blue-500"
                 placeholder="00000-000"
                 onBlur={checkCEP}
               />
             </div>
             <div className="md:col-span-2">
-              <Input label="Rua" value={formData.rua} onChange={e => setFormData({...formData, rua: e.target.value})} />
+              <Input
+                label="Rua"
+                value={formData.rua}
+                onChange={(e) =>
+                  setFormData({ ...formData, rua: e.target.value })
+                }
+              />
             </div>
-            <Input label="Bairro" value={formData.bairro} onChange={e => setFormData({...formData, bairro: e.target.value})} />
-            <Input label="Cidade" value={formData.cidade} onChange={e => setFormData({...formData, cidade: e.target.value})} />
-            <Input label="UF" value={formData.uf} onChange={e => setFormData({...formData, uf: e.target.value})} />
+            <Input
+              label="Bairro"
+              value={formData.bairro}
+              onChange={(e) =>
+                setFormData({ ...formData, bairro: e.target.value })
+              }
+            />
+            <Input
+              label="Cidade"
+              value={formData.cidade}
+              onChange={(e) =>
+                setFormData({ ...formData, cidade: e.target.value })
+              }
+            />
+            <Input
+              label="UF"
+              value={formData.uf}
+              onChange={(e) => setFormData({ ...formData, uf: e.target.value })}
+            />
           </div>
         </div>
       </form>

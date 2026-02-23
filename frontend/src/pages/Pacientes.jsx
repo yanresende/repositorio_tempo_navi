@@ -10,9 +10,14 @@ export default function Pacientes() {
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
         <div>
           <h1 className="text-2xl font-bold text-gray-800">Pacientes</h1>
-          <p className="text-gray-500 text-sm">Gerencie todos os pacientes cadastrados no NaviData.</p>
+          <p className="text-gray-500 text-sm">
+            Gerencie todos os pacientes cadastrados no NaviData.
+          </p>
         </div>
-        <button onClick={() => navigate('/pacientes/novo')} className="flex items-center justify-center gap-2 bg-blue-600 text-white px-4 py-2 rounded-xl font-semibold hover:bg-blue-700 transition-all shadow-md shadow-blue-100">
+        <button
+          onClick={() => navigate("/pacientes/novo")}
+          className="flex items-center justify-center gap-2 bg-[#f49434] text-white px-4 py-2 rounded-xl font-semibold hover:bg-[#c35029] transition-all shadow-md shadow-blue-100"
+        >
           <Plus size={20} />
           Novo Paciente
         </button>
@@ -21,10 +26,13 @@ export default function Pacientes() {
       {/* BARRA DE FILTROS */}
       <div className="bg-white p-4 rounded-2xl border border-gray-100 shadow-sm flex flex-col md:flex-row gap-4">
         <div className="relative flex-1">
-          <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" size={18} />
-          <input 
-            type="text" 
-            placeholder="Buscar por nome, CPF ou prontuário..." 
+          <Search
+            className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"
+            size={18}
+          />
+          <input
+            type="text"
+            placeholder="Buscar por nome, CPF ou prontuário..."
             className="w-full pl-10 pr-4 py-2 rounded-lg border border-gray-200 outline-none focus:ring-2 focus:ring-blue-500 transition"
           />
         </div>
@@ -49,23 +57,23 @@ export default function Pacientes() {
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-50">
-              <PacienteRow 
-                name="Marcos Oliveira" 
-                email="marcos.o@email.com" 
-                cpf="123.456.789-00" 
-                lastVisit="20/02/2026" 
+              <PacienteRow
+                name="Marcos Oliveira"
+                email="marcos.o@email.com"
+                cpf="123.456.789-00"
+                lastVisit="20/02/2026"
               />
-              <PacienteRow 
-                name="Juliana Ferreira" 
-                email="juli.fer@email.com" 
-                cpf="987.654.321-11" 
-                lastVisit="15/01/2026" 
+              <PacienteRow
+                name="Juliana Ferreira"
+                email="juli.fer@email.com"
+                cpf="987.654.321-11"
+                lastVisit="15/01/2026"
               />
-              <PacienteRow 
-                name="Ricardo Mendes" 
-                email="mendes.r@email.com" 
-                cpf="456.123.789-22" 
-                lastVisit="02/02/2026" 
+              <PacienteRow
+                name="Ricardo Mendes"
+                email="mendes.r@email.com"
+                cpf="456.123.789-22"
+                lastVisit="02/02/2026"
               />
             </tbody>
           </table>
@@ -107,14 +115,14 @@ function PacienteRow({ name, email, cpf, lastVisit }) {
       <td className="px-6 py-4 text-sm text-gray-500">{cpf}</td>
       <td className="px-6 py-4 text-sm text-gray-500">{lastVisit}</td>
       <td className="px-6 py-4">
-        <button className="text-xs font-medium text-blue-600 bg-blue-50 px-2 py-1 rounded hover:bg-blue-100 transition">
+        <button className="text-xs font-medium text-green-500 bg-green-100 px-2 py-1 rounded hover:bg-green-200 transition">
           WhatsApp
         </button>
       </td>
-      
+
       {/* BOTÃO DE AÇÃO COM MENU DROP DOWN */}
       <td className="px-6 py-4 text-center relative" ref={menuRef}>
-        <button 
+        <button
           onClick={() => setMenuAberto(!menuAberto)}
           className="p-2 text-gray-400 hover:text-gray-600 hover:bg-gray-100 rounded-lg transition"
         >
@@ -123,8 +131,8 @@ function PacienteRow({ name, email, cpf, lastVisit }) {
 
         {menuAberto && (
           <div className="absolute right-6 top-12 w-48 bg-white rounded-xl shadow-xl border border-gray-100 z-50 py-2 animate-in fade-in zoom-in duration-200">
-            <button 
-              onClick={() => navigate('/pacientes/prontuario')}
+            <button
+              onClick={() => navigate("/pacientes/prontuario")}
               className="w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 flex items-center gap-2"
             >
               <ClipboardList size={16} /> Ver Prontuário
