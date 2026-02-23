@@ -38,7 +38,7 @@ export default function Dashboard() {
         />
       </div>
 
-      {/* 3. Tabela de Próximas Consultas (Agora dentro do return!) */}
+      {/* 3. Tabela de Próximas Consultas) */}
       <div className="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
         <div className="p-6 border-b border-gray-50 flex justify-between items-center">
           <h3 className="font-bold text-gray-800">Próximos Atendimentos</h3>
@@ -83,7 +83,6 @@ export default function Dashboard() {
   );
 }
 
-// O componente auxiliar fica aqui fora mesmo, sem problemas!
 function TableRow({ name, time, type, status }) {
   const statusColors = {
     Confirmado: "bg-green-100 text-green-700",
