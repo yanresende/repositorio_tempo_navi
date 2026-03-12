@@ -5,6 +5,7 @@ import {
   Calendar,
   Settings,
   LogOut,
+  List,
 } from "lucide-react";
 
 export default function Layout() {
@@ -24,6 +25,11 @@ export default function Layout() {
             icon={<LayoutDashboard size={20} />}
             label="Dashboard"
             to="/dashboard"
+          />
+          <SidebarItem
+            icon={<List size={20} />}
+            label="Triagem"
+            to="/triagem"
           />
           <SidebarItem
             icon={<Users size={20} />}

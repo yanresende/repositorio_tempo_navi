@@ -7,6 +7,7 @@ import NovoPaciente from './pages/NovoPaciente';
 import Prontuario from './pages/Prontuario';
 import Agenda from './pages/Agenda';
 import Configuracoes from './pages/Configuracoes';
+import Triagem from './pages/Triagem';
 
 // Página temporária de Pacientes
 
@@ -28,6 +29,7 @@ function App() {
           <Route path="/pacientes/novo" element={<NovoPaciente />} />
           <Route path="/pacientes/prontuario" element={<Prontuario />} />
           <Route path="/agenda" element={<Agenda />} />
+          <Route path="/triagem" element={<Triagem />} />
         </Route>
 
         <Route path="/" element={<Navigate to="/dashboard" />} />
